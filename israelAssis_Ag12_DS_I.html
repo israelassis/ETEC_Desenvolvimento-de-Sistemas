@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba da página -->
+    <title>Meus sites favoritos</title>
+    <style>
+        /* Estilo inspirado na Netflix */
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            background-color: #141414; /* Fundo padrão Netflix */
+            color: #fff; 
+            margin: 0; 
+            padding: 40px 20px;
+        }
+
+        h1.titulo-principal { 
+            color: #e50914; /* Vermelho Netflix */
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Container Flex para alinhar os itens horizontalmente */
+        .catalog {
+            display: flex;
+            /* itens quebrem para a próxima linha se não couberem em uma única linha */
+            flex-wrap: wrap;
+            /* centraliza os itens horizontalmente */
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Card individual de cada site */
+        .site-container { 
+            background: #2f2f2f; 
+            padding: 15px; 
+            border-radius: 4px; 
+            width: 280px; 
+            transition: transform 0.3s ease; /* Efeito de zoom ao passar o mouse */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .site-container:hover {
+            transform: scale(1.05);
+            z-index: 10;
+            box-sizing: border-box;
+        }
+
+        .site-container h1 { 
+            font-size: 1.2rem; 
+            margin: 10px 0;
+            color: #f7f308;
+        }
+
+        .site-container h3 {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #b3b3b3;
+        }
+
+        img { 
+            width: 100%; 
+            height: 150px; 
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+            border-radius: 2px; 
+        }
+
+        a { 
+            color: #b3b3b3; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 0.9rem;
+            margin-top: 10px;
+            padding: 8px;
+            border: 1px solid #b3b3b3;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        a:hover { 
+            background: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal -->
+    <h1 class="titulo-principal">Meus sites favoritos: Israel Assis</h1>
+
+    <div class="catalog">
+        <!-- Site 1: Notícias -->
+        <div class="site-container">
+            <H1>Notícias</H1>
+            <h3>Brasil Paralelo</h3>
+            <img src="logo_BP_ag12_DSI_web.PNG" alt="Logo Brasil Paralelo" style="width: 290px; height: auto; margin: 0 auto;">
+            <a href="https://www.brasilparalelo.com.br/" target="_blank">ASSISTIR AGORA</a>
+        </div>
+
+        <!-- Site 2: Esportes -->
+        <div class="site-container">
+            <h1>ESPORTES</h1>
+            <h3>NBA</h3>
+            <img src="logo_NBA_ag12_DSI_web.PNG" alt="Logo NBA" style="width: 90px; height: auto; margin: 0 auto;">
+            <a href="https://nba.com" target="_blank">ASSISTIR AGORA</a>
+        </div>
+
+        <!-- Site 3: Cinema (Sessão Nerd) -->
+        <div class="site-container">
+            <h1>CINEMA</h1>
+            <h3>Sessão Nerd</h3>
+            <img src="logo_SESSAONERD_ag12_DSI_web.PNG" alt="Logo Sessão Nerd">
+            <a href="https://sessaonerd.com.br" target="_blank">ASSISTIR AGORA</a>
+        </div>
+
+        <!-- Site 3.1: Cinema (Adoro Cinema) -->
+        <div class="site-container">
+            <h1>CINEMA</h1>
+            <h3>Adoro Cinema</h3>
+            <img src="logo_AdoroCinema_ag12_DSI_web.PNG" alt="Logo Adoro Cinema" style="width: 290px; height: auto; margin: 0 auto;">
+            <a href="https://www.adorocinema.com" target="_blank">ASSISTIR AGORA</a>
+        </div>
+
+        <!-- Site 4: Animes -->
+        <div class="site-container">
+            <h1>ANIMES</h1>
+            <h3>Crunchyroll</h3>
+            <img src="logo_Crunchyroll_ag12_DSI_web.PNG" alt="Logo Crunchyroll" style="width: 190px; height: auto; margin: 0 auto;">
+            <a href="https://www.crunchyroll.com" target="_blank">ASSISTIR AGORA</a>
+        </div>
+
+        <!-- Site 5: Viagens -->
+        <div class="site-container">
+            <h1>Viagens: Japão</h1>
+            <h3>Turismo Japão</h3>
+            <img src="logo_JAPAO_ag12_DSI_web.PNG" alt="Logo Turismo Japão" style="width: 290px; height: auto; margin: 0 auto;">
+            <a href="https://japaointercambio.com.br" target="_blank">ASSISTIR AGORA</a>
+        </div>
+    </div>
+
+</body>
+</html>
