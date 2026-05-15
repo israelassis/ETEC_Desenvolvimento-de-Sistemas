@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Olímpico Digital</title>
+    
+    <!-- Vinculação das folhas de estilo externas (Reset sempre primeiro) -->
+    <link rel="stylesheet" href="/DS_I/DS_I_portal_reset.css">
+    <link rel="stylesheet" href="/DS_I/DS_I_portal.css">
+
+    <!-- CSS INTERNO: Estilos específicos para a estrutura da página atual -->
+    <style>
+        header {
+            background-color: #002f6c; /* Azul escuro esportivo */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: #777777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- CSS INLINE: Aplicado diretamente no elemento para mudar a cor do texto para branco -->
+        <h1 id="titulo-portal" style="color: #ffffff;">Portal Olímpico Digital</h1>
+    </header>
+
+    <!-- Container principal configurado com Flexbox no arquivo externo -->
+    <main class="container-flex">
+
+        <!-- SEÇÃO 1: MODALIDADES ESPORTIVAS -->
+        <section class="secao-card">
+            <h2 class="titulo-secao" id="tema-modalidades">Modalidades Esportivas</h2>
+            <p class="texto-explicativo">Acompanhe as regras, novidades e o calendário das principais competições, desde os esportes clássicos como atletismo e natação até as novas inclusões olímpicas.</p>
+            <img class="imagem-midia" src="/assets/imagens/corrida e atletismo.jpg" alt="Corrida de Atletismo">
+            <img class="imagem-midia" src="/assets/imagens/natação.jpg" alt="Natação">
+        </section>
+
+        <!-- SEÇÃO 2: GRANDES ATLETAS -->
+        <section class="secao-card">
+            <h2 class="titulo-secao" id="tema-atletas">Grandes Atletas</h2>
+            <p class="texto-explicativo">Conheça o perfil, a rotina de treinos e as histórias de superação das lendas do esporte mundial e dos novos talentos que buscam o topo do pódio.</p>
+            <img class="imagem-midia" src="/assets/imagens/ginastica artistica.jpg" alt="Ginástica Artística">
+            <img class="imagem-midia" src="/assets/imagens/ciclismo.jpg" alt="Ciclista em Velocidade">
+        </section>
+
+        <!-- SEÇÃO 3: HISTÓRIA DOS JOGOS -->
+        <section class="secao-card">
+            <h2 class="titulo-secao" id="tema-historia">História dos Jogos</h2>
+            <p class="texto-explicativo">Viaje no tempo e descubra como surgiram os jogos na Grécia Antiga, a evolução das medalhas, os recordes históricos e os momentos mais marcantes da era moderna.</p>
+            <img class="imagem-midia" src="/assets/imagens/estadio olimpico antigo.jpg" alt="Estádio Olímpico Antigo">
+            <img class="imagem-midia" src="/assets/imagens/medalhas de ouro.jpg" alt="Medalhas de Ouro">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal Olímpico Digital. Atividade ETEC - DS_I - Israel Assis.</p>
+    </footer>
+
+</body>
+</html>

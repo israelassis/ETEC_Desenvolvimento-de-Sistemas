@@ -1,0 +1,14 @@
+/* reset.css - Baseado no Eric Meyer Reset */
+
+html, body, div, section, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; /* Facilita o cálculo de larguras no nível júnior */
+}
+body {
+    line-height: 1;
+}
